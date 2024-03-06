@@ -16,6 +16,14 @@ const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBar.currentHeight;
 
 const Drawer = createDrawerNavigator();
 
+function Home() {
+  return (
+    <Drawer.Navigator screenOptions={{headerShown: false}} drawerContent={DrawerContent}>
+      <Drawer.Screen name="Main" component={TelaTempoHoje}/>
+    </Drawer.Navigator>
+  );
+}
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
