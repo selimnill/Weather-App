@@ -30,7 +30,16 @@ export default function App() {
 
   
   return (
-    
+    <SafeAreaView style = {styles.container} >
+
+      <StatusBar  barStyle="dark-content" translucent backgroundColor={'transparent'} /> 
+      <NavigationContainer>
+      <Stack.Navigator  screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Home" component={Home}/>
+      <Stack.Screen name="Next 7 days" component={TelaProximosDias}/>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaView>
   );
 }
 
