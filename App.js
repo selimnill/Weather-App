@@ -24,7 +24,7 @@ function Home() {
   );
 }
 
-const Stack = createNativeStackNavigator();
+const 
 
 export default function App() {
 
